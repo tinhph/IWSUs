@@ -1,3 +1,4 @@
+{% load static %}
 <!doctype html>
 <html lang="en">
 
@@ -30,7 +31,7 @@
 <body>
     <div id="siteLoader" class="site-loader">
         <div class="preloader-content">
-            <img src="assets/images/loader1.gif" alt="">
+            <img src="{% static 'assets/images/loader1.gif' %}" alt="">
         </div>
     </div>
     <div id="page" class="full-page">
@@ -77,8 +78,8 @@
                     <div class="site-identity">
                         <p class="site-title">
                             <a href="index.html">
-                                <img class="white-logo" src="assets/images/travele-logo.png" alt="logo">
-                                <img class="black-logo" src="assets/images/travele-logo1.png" alt="logo">
+                                <img class="white-logo" src="{% static 'assets/images/travele-logo.png' %}" alt="logo">
+                                <img class="black-logo" src="{% static 'assets/images/travele-logo1.png' %}" alt="logo">
                             </a>
                         </p>
                     </div>
@@ -276,7 +277,7 @@
                             <div class="single-tour-inner">
                                 <h2>EXPERIENCE THE NATURAL BEAUTY OF ISLAND</h2>
                                 <figure class="feature-image">
-                                    <img src="assets/images/img27.jpg" alt="">
+                                    <img src="{% static 'assets/images/img27.jpg'%}" alt="">
                                     <div class="package-meta text-center">
                                         <ul>
                                             <li>
@@ -383,7 +384,7 @@
                                                     <ol>
                                                         <li>
                                                             <figure class="comment-thumb">
-                                                                <img src="assets/images/img20.jpg" alt="">
+                                                                <img src="{% static 'assets/images/img20.jpg'%}" alt="">
                                                             </figure>
                                                             <div class="comment-content">
                                                                 <div class="comment-header">
@@ -403,7 +404,7 @@
                                                             <ol>
                                                                 <li>
                                                                     <figure class="comment-thumb">
-                                                                        <img src="assets/images/img21.jpg" alt="">
+                                                                        <img src="{% static 'assets/images/img21.jpg'%}" alt="">
                                                                     </figure>
                                                                     <div class="comment-content">
                                                                         <div class="comment-header">
@@ -425,7 +426,7 @@
                                                     <ol>
                                                         <li>
                                                             <figure class="comment-thumb">
-                                                                <img src="assets/images/img22.jpg" alt="">
+                                                                <img src="{% static 'assets/images/img22.jpg'%}" alt="">
                                                             </figure>
                                                             <div class="comment-content">
                                                                 <div class="comment-header">
@@ -487,22 +488,22 @@
                                     <div class="single-tour-slider">
                                         <div class="single-tour-item">
                                             <figure class="feature-image">
-                                                <img src="assets/images/img28.jpg" alt="">
+                                                <img src="{% static 'assets/images/img28.jpg'%}" alt="">
                                             </figure>
                                         </div>
                                         <div class="single-tour-item">
                                             <figure class="feature-image">
-                                                <img src="assets/images/img29.jpg" alt="">
+                                                <img src="{% static 'assets/images/img29.jpg'%}" alt="">
                                             </figure>
                                         </div>
                                         <div class="single-tour-item">
                                             <figure class="feature-image">
-                                                <img src="assets/images/img32.jpg" alt="">
+                                                <img src="{% static 'assets/images/img32.jpg'%}" alt="">
                                             </figure>
                                         </div>
                                         <div class="single-tour-item">
                                             <figure class="feature-image">
-                                                <img src="assets/images/img33.jpg" alt="">
+                                                <img src="{% static 'assets/images/img33.jpg'%}" alt="">
                                             </figure>
                                         </div>
                                     </div>
@@ -622,27 +623,7 @@
                     </div>
                 </div>
             </div>
-            <!-- subscribe section html start -->
-            <section class="subscribe-section" style="background-image: url(assets/images/img16.jpg);">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-7">
-                            <div class="section-heading section-heading-white">
-                                <h5 class="dash-style">HOLIDAY PACKAGE OFFER</h5>
-                                <h2>HOLIDAY SPECIAL 25% OFF !</h2>
-                                <h4>Sign up now to recieve hot special offers and information about the best tour packages, updates and discounts !!</h4>
-                                <div class="newsletter-form">
-                                    <form>
-                                        <input type="email" name="s" placeholder="Your Email Address">
-                                        <input type="submit" name="signup" value="SIGN UP NOW!">
-                                    </form>
-                                </div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Eaque adipiscing, luctus eleifend temporibus occaecat luctus eleifend tempo ribus.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+
             <!-- subscribe html end -->
         </main>
         <footer id="colophon" class="site-footer footer-primary">
@@ -658,8 +639,8 @@
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
                                 </div>
                                 <div class="award-img">
-                                    <a href="#"><img src="assets/images/logo6.png" alt=""></a>
-                                    <a href="#"><img src="assets/images/logo2.png" alt=""></a>
+                                    <a href="#"><img src="{% static 'assets/images/logo6.png'%}" alt=""></a>
+                                    <a href="#"><img src="{% static 'assets/images/logo2.png'%}" alt=""></a>
                                 </div>
                             </aside>
                         </div>
@@ -754,7 +735,7 @@
                         </div>
                         <div class="col-md-2 text-center">
                             <div class="footer-logo">
-                                <a href="#"><img src="assets/images/travele-logo.png" alt=""></a>
+                                <a href="#"><img src="{% static 'assets/images/travele-logo.png' %}" alt=""></a>
                             </div>
                         </div>
                         <div class="col-md-5">
