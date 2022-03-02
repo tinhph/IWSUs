@@ -5,4 +5,4 @@
 5. chạy python migrate
 6. chạy dòng lệnh: python manage.py createsuperuser
 7. Tạo model diadiem, add vào setting
-8. 
+8. sđsfsd
