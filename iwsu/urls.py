@@ -21,5 +21,6 @@ from django.conf import settings
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.home, name='home'),
-    path('detail',views.detail, name='detail')
+  #  path('detail',views.detail, name='detail'),
+    path('details/<slug:diadiem_slug>/', views.diaDiem, name='diaDiem'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

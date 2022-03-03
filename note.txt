@@ -1,8 +1,8 @@
 1. Tạo model trong tour
 2. Cấu hình database trong settings
-3. Install pylow
-4. chạy python makemigrations
-5. chạy python migrate
+3. pip install Pillow
+4. chạy python manage.py makemigrations
+5. chạy python manage.py migrate
 6. chạy dòng lệnh: python manage.py createsuperuser
-7. Tạo model diadiem, add vào setting
-8. sđsfsd
+8. khi thêm hình ảnh thì add vào folder static trong thư mục root rồi
+   chạy : python manage.py collectstatic

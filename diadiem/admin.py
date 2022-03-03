@@ -5,6 +5,6 @@ from .models import DiaDiem
 
 # Register your models here.
 class DiaDiemAdmin(admin.ModelAdmin):
-    list_display = ('ten_dia_diem', 'thanh_pho')
+    list_display = ('ten_dia_diem', 'thanh_pho','ghi_chu')
 
 admin.site.register(DiaDiem, DiaDiemAdmin)

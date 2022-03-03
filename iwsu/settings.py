@@ -83,7 +83,7 @@ WSGI_APPLICATION = 'iwsu.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'tour',
+        'NAME': 'iwsus',
         'USER': 'root',
         'PASSWORD': '123456',
         'HOST': 'localhost',
