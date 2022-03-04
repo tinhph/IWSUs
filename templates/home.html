@@ -601,5 +601,26 @@
     <script src="{% static 'assets/js/custom.min.js'%}"></script>
 
 </body>
+<script>
+    $(document).ready(function() {
+        var x = "Da Nang"
+        loadJson(x)
+    });
+
+    function loadJson(locations) {
+        $.ajax({
+            type: "GET",
+            url: "getData_Ajax",
+            data: {
+                'local_views': locations,
+            },
+            success: function(parsedData) {
+                console.log(parsedData)
+                    // var obj = JSON.parse(parsedData)
+                    // console.log(obj[0])
+            }
+        });
+    }
+</script>
 
 </html>

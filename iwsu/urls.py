@@ -8,5 +8,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.home, name='home'),
     path('details/<slug:diadiem_slug>/', views.diaDiem, name='diaDiem'),
-    path('',include('diadiem.urls')),
+    path('diadiem/', include('diadiem.urls')),
+    path('getData_Ajax', views.getData, name = 'getData'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
