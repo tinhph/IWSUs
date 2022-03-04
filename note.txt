@@ -6,3 +6,9 @@
 6. chạy dòng lệnh: python manage.py createsuperuser
 8. khi thêm hình ảnh thì add vào folder static trong thư mục root rồi
    chạy : python manage.py collectstatic
+
+https://www.django-rest-framework.org/
+
+pip install djangorestframework
+pip install markdown       # Markdown support for the browsable API.
+pip install django-filter  # Filtering support
