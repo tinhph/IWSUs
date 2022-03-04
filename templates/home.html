@@ -247,12 +247,12 @@
                     <div class="trip-search-inner white-bg d-flex">
                         <div class="input-group" style="width: 75%;">
 
-                            <input type="text" name="s" placeholder="Nhập tên địa điểm">
+                            <input type="text" id="diadiem_input" name="diadiem_input" placeholder="Nhập tên địa điểm">
 
                         </div>
                         <div class="input-group width-col-3">
                             <label class="screen-reader-text"> Search </label>
-                            <input type="submit" name="travel-search" value="TÌM KIẾM">
+                            <input type="button" id="travel-search" name="travel-search" value="TÌM KIẾM">
                         </div>
                     </div>
                 </div>
@@ -602,8 +602,13 @@
 
 </body>
 <script>
-    $(document).ready(function() {
-        var x = "Da Nang"
+    /*  $(document).ready(function() {
+                    var x = "Da Nang"
+                    loadJson(x)
+                    });*/
+
+    $("#travel-search").click(function() {
+        var x = $("#diadiem_input").val()
         loadJson(x)
     });
 
@@ -616,6 +621,7 @@
             },
             success: function(parsedData) {
                 console.log(parsedData)
+                alert(parsedData['lat_key'])
                     // var obj = JSON.parse(parsedData)
                     // console.log(obj[0])
             }

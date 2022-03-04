@@ -32,7 +32,6 @@ def diaDiem(request, diadiem_slug):
 def getData(request):
     if request.method == 'GET':
         api_key = False
-
     if api_key is False:
         api_key = 42
         serviceurl = 'http://py4e-data.dr-chuck.net/json?'
